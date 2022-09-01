@@ -9,8 +9,10 @@ import test3.fwd.service.FwdVO;
 
 @Controller
 public class FwdController {
-	@RequestMapping(value="/reqUrl.do")
+	@RequestMapping(value = "/reqUrl.do")
 	public String selectReqUrl(@ModelAttribute("searchVO") FwdVO searchVO, ModelMap model) throws Exception{
 		return "redirect:http://www.naver.com";
 	}
+
+
 }
